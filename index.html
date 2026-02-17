@@ -279,4 +279,254 @@ body{font-family:var(--sn);background:#fff;overflow:hidden;height:100vh;width:10
 <div class="stats">
 <div class="stat"><div class="stat-n">100%</div><div class="stat-t">steuerlich absetzbar als Betriebsausgabe</div></div>
 <div class="stat"><div class="stat-n">6–36</div><div class="stat-t">Monate flexible Vertragslaufzeit</div></div>
-<div class="stat"><div class="
+<div class="stat"><div class="stat-n">∞</div><div class="stat-t">Rotation &amp; Werkwechsel möglich</div></div>
+</div>
+
+<div id="stZone"><div class="st-sticky"><div class="st-line" id="s0">Skulptur</div><div class="st-line" id="s1" style="font-style:italic">Malerei</div><div class="st-line" id="s2">Installation</div></div></div>
+
+<div class="par-sec"><div class="par-bg" data-parbg><img src="https://images.unsplash.com/photo-1547891654-e66ed7ebb968?w=1400&q=80" alt=""></div><div class="par-ct le"><div class="par-card"><div class="par-label">Skulptur</div><h3 class="par-title">Körper im Raum</h3><p class="par-text">Dreidimensionale Werke, die Architektur und Kunst in einen Dialog bringen.</p><div class="par-artist">Volker Seifried · Johannes Weiß</div></div></div></div>
+<div class="par-sec"><div class="par-bg" data-parbg><img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=1400&q=80" alt=""></div><div class="par-ct ri"><div class="par-card"><div class="par-label">Malerei</div><h3 class="par-title">Farbfeld &amp; Tiefe</h3><p class="par-text">Abstrakte und figurative Positionen, die Räume durch Farbe und Textur definieren.</p><div class="par-artist">Maria Stern</div></div></div></div>
+<div class="par-sec"><div class="par-bg" data-parbg><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1400&q=80" alt=""></div><div class="par-ct le"><div class="par-card"><div class="par-label">Installation</div><h3 class="par-title">Raum als Medium</h3><p class="par-text">Ortsspezifische Interventionen, die Licht, Material und Architektur verbinden.</p><div class="par-artist">Lukas Grimm</div></div></div></div>
+
+<div class="teaser" onclick="go('leasing')"><div class="teaser-in"><div><h2><i>L</i>easing</h2><p>Kunst ohne Kapitalbindung. Leasingraten sind als Betriebsausgaben voll absetzbar.</p><span class="link">Konditionen ansehen →</span></div><div class="tags"><span class="tag">Skulptur</span><span class="tag">Malerei</span><span class="tag">Installation</span><span class="tag">Fotografie</span><span class="tag">Objekt</span><span class="tag">Rotation</span><span class="tag">Ankauf-Option</span></div></div></div>
+
+<div class="cta-sec"><h2 class="cta-title">Lassen Sie<br><i>uns sprechen</i></h2><button class="cta-btn" onclick="openChat()">Beratung anfragen</button></div>
+</div>
+
+<!-- OVERLAYS -->
+<div class="ov" id="kuenstlerOv"></div>
+<div class="ov" id="prozessOv"></div>
+<div class="ov" id="kreativeOv"></div>
+<div class="ov" id="leasingOv"></div>
+<div class="ov" id="kontaktOv"></div>
+
+<!-- CHAT -->
+<button id="chatBtn" onclick="openChat()"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></button>
+<div id="chatBox">
+<div style="padding:20px 24px;border-bottom:1px solid rgba(0,0,0,0.08);display:flex;justify-content:space-between;align-items:center"><div><div style="font-family:var(--sf);font-size:16px">KLS Beratung</div><div style="font-size:10px;letter-spacing:0.1em;text-transform:uppercase;opacity:0.4;margin-top:4px">KI-Assistent</div></div><button onclick="closeChat()" style="background:none;border:none;font-size:20px;cursor:pointer;opacity:0.4;padding:4px;line-height:1">✕</button></div>
+<div id="chatMsgs"></div>
+<div id="chatForm"><input id="chatIn" placeholder="Ihre Frage..."><button id="chatSend" onclick="sendChat()"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"><path d="M22 2L11 13"/><path d="M22 2L15 22L11 13L2 9L22 2Z"/></svg></button></div>
+</div>
+
+<!-- IMPRESSUM -->
+<div id="impressum"><div class="imp-inner">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:60px"><h2 style="font-family:var(--sf);font-size:clamp(36px,8vw,60px);font-weight:300;line-height:1">Impressum</h2><button onclick="document.getElementById('impressum').classList.remove('av')" style="background:none;border:none;font-size:24px;cursor:pointer;opacity:0.4;padding:8px">✕</button></div>
+<div style="display:grid;gap:40px">
+<div><div class="k-label">Angaben gemäß § 5 TMG</div><p class="k-info">KLS — Corporate Art Services<br>Musterstraße 12<br>10999 Berlin</p></div>
+<div><div class="k-label">Kontakt</div><p class="k-info">Telefon: <a href="tel:+493012345678">+49 30 1234 5678</a><br>E-Mail: <a href="/cdn-cgi/l/email-protection#432a2d252c03282f306e2231376d2726"><span class="__cf_email__" data-cfemail="b6dfd8d0d9f6dddac59bd7c4c298d2d3">[email&#160;protected]</span></a></p></div>
+<div><div class="k-label">Vertreten durch</div><p class="k-info">Johannes Weiß</p></div>
+<div><div class="k-label">Umsatzsteuer-ID</div><p class="k-info">gemäß §27a UStG: DE XXX XXX XXX</p></div>
+<div><div class="k-label">Haftungsausschluss</div><p style="font-size:14px;line-height:1.8;opacity:0.7">Die Inhalte wurden mit größter Sorgfalt erstellt. Für Richtigkeit, Vollständigkeit und Aktualität können wir keine Gewähr übernehmen.</p></div>
+<div><div class="k-label">Urheberrecht</div><p style="font-size:14px;line-height:1.8;opacity:0.7">Die Inhalte unterliegen dem deutschen Urheberrecht. Vervielfältigung bedarf der schriftlichen Zustimmung.</p></div>
+</div></div></div>
+
+<!-- ARTIST DETAIL -->
+<div class="art-detail" id="artistDetail"></div>
+
+<!-- FOOTER -->
+<div id="foot"><span>© 2026 KLS — Corporate Art Services</span><div class="foot-r"><a href="https://www.instagram.com/kunstleasing.berlin/" target="_blank" rel="noopener noreferrer">Instagram</a><span style="opacity:0.4">·</span><a href="#" onclick="event.preventDefault();document.getElementById('impressum').classList.add('av')">Impressum</a></div></div>
+
+<script>
+var cur='about',hdr=document.getElementById('hdr'),main=document.getElementById('main'),foot=document.getElementById('foot');
+var SF="'Libre Bodoni',Georgia,serif",SN="'DM Sans',sans-serif";
+
+// ============================================================
+// IMAGE BASE PATH - UPDATE THIS TO YOUR GITHUB REPO
+// ============================================================
+// Format: https://raw.githubusercontent.com/USERNAME/REPO/main/FOLDER/
+// Example: https://raw.githubusercontent.com/johannesweiss/kls-art/main/austellung/
+var IMG_BASE = "https://raw.githubusercontent.com/USERNAME/REPO/main/austellung/";
+// Replace with your actual GitHub path, then use like:
+// IMG_BASE + "JOHANNES_WEISS.png"
+// IMG_BASE + "VOILKER_SEIFRIED.png"
+// etc.
+
+// For now using Unsplash as placeholders:
+var PH = "https://images.unsplash.com/";
+
+// ARTIST DATA (10 Künstler)
+var artists=[
+{n:"01",nm:"Volker Seifried",d:"Reduktion auf das Wesentliche. Geometrische Strenge trifft organische Form – Material und Raum im Dialog.",tags:["Bronze","Stein","Holz"],img:PH+"photo-1547891654-e66ed7ebb968?w=1600&q=80"},
+{n:"02",nm:"Johannes Weiß",d:"Organische Abstraktion in Aluminium und Bronze. Formen, die Verkörperung und Zeitlichkeit erforschen.",tags:["Aluminium","Bronze","Gips"],img:PH+"photo-1578926288207-a90a5366759d?w=1600&q=80"},
+{n:"03",nm:"Maria Stern",d:"Abstrakte Farbfelder als Räume emotionaler Tiefe. Großformatige Leinwände für kontemplative Atmosphären.",tags:["Öl","Acryl","Großformat"],img:PH+"photo-1541961017774-22349e4a1262?w=1600&q=80"},
+{n:"04",nm:"Lukas Grimm",d:"Raum als Medium, Licht als Material. Ortsspezifische Installationen, die Architektur transformieren.",tags:["Licht","Installation"],img:PH+"photo-1515405295579-ba7b45403062?w=1600&q=80"},
+{n:"05",nm:"Keike Kimoto",d:"Textile Skulpturen zwischen Weichheit und Struktur. Organische Materialien in skulpturaler Verdichtung.",tags:["Textil","Skulptur"],img:PH+"photo-1558618666-fcd25c85cd64?w=1600&q=80"},
+{n:"06",nm:"Jennifer Bisch",d:"Minimalistische Zeichnungen und Druckgrafiken. Linie als Reduktion von Welt.",tags:["Zeichnung","Druck"],img:PH+"photo-1582555172866-f73bb12a2ab3?w=1600&q=80"},
+{n:"07",nm:"Keiko Kimoto",d:"Keramische Objekte zwischen Gefäß und Skulptur. Archaische Formen in zeitgenössischer Sprache.",tags:["Keramik","Objekt"],img:PH+"photo-1578926288207-a90a5366759d?w=1600&q=80"},
+{n:"08",nm:"Thomas Klee",d:"Fotografie, die Industrieästhetik und urbane Strukturen einfängt.",tags:["Fotografie","Digital"],img:PH+"photo-1460661419201-fd4cecdf8a8b?w=1600&q=80"},
+{n:"09",nm:"Sophie Rau",d:"Abstrakte Videoinstallationen und Medienkunst. Bewegung als Stillstand.",tags:["Video","Medienkunst"],img:PH+"photo-1497366216548-37526070297c?w=1600&q=80"},
+{n:"10",nm:"David Gross",d:"Stahlskulpturen für den Außenraum. Wetterfeste Monumente zwischen Natur und Industrie.",tags:["Stahl","Skulptur"],img:PH+"photo-1547891654-e66ed7ebb968?w=1600&q=80"}
+];
+
+// ARTIST WORKS DATA (5 Werke pro Künstler)
+var artistWorks={};
+artists.forEach(function(a){
+  artistWorks[a.nm] = {
+    img: a.img, num: a.n, desc: a.d, tags: a.tags,
+    works: [
+      {img:PH+"photo-1558618666-fcd25c85cd64?w=800&q=80",name:"Werk I",meta:a.tags[0]+", 2023",text:"Erste Position im Werkzyklus. Auseinandersetzung mit Form und Material."},
+      {img:PH+"photo-1582555172866-f73bb12a2ab3?w=800&q=80",name:"Werk II",meta:a.tags[0]+", 2023",text:"Weiterentwicklung des formalen Vokabulars. Dialog zwischen Oberfläche und Struktur."},
+      {img:PH+"photo-1578926288207-a90a5366759d?w=800&q=80",name:"Werk III",meta:a.tags[0]+", 2024",text:"Verdichtung der künstlerischen Position. Material wird zum Bedeutungsträger."},
+      {img:PH+"photo-1547891654-e66ed7ebb968?w=800&q=80",name:"Werk IV",meta:a.tags[0]+", 2024",text:"Räumliche Intervention. Das Werk tritt in Dialog mit seiner Umgebung."},
+      {img:PH+"photo-1541961017774-22349e4a1262?w=800&q=80",name:"Werk V",meta:a.tags[0]+", 2025",text:"Jüngste Arbeit. Synthese aus bisheriger Praxis und neuen Materialexperimenten."}
+    ]
+  };
+});
+
+// PROCESS DATA
+var processSteps=[
+{n:"01",t:"Beratung",d:"Wir besuchen Ihre Räume, verstehen Architektur und Unternehmenskultur. Gemeinsam definieren wir Vision und Ziel.",img:PH+"photo-1497366216548-37526070297c?w=1400&q=80"},
+{n:"02",t:"Kuration",d:"Zeitgenössische Positionen, zusammengestellt mit Visualisierungen. Wir präsentieren Optionen, die Ihre Räume transformieren.",img:PH+"photo-1497366811353-6870744d04b2?w=1400&q=80"},
+{n:"03",t:"Vertrag",d:"Flexible Laufzeiten, monatliche Raten, voll absetzbar. Transparente Modelle für jede Unternehmensgröße.",img:PH+"photo-1450101499163-c8848c66ca85?w=1400&q=80"},
+{n:"04",t:"Installation",d:"Professioneller Transport, fachgerechte Montage und Beleuchtungsberatung. Das Werk wird zum Raum.",img:PH+"photo-1486406146926-c627a92ad1ab?w=1400&q=80"},
+{n:"05",t:"Betreuung",d:"Pflege, Vermittlung, auf Wunsch neue Werke. Eine langfristige Partnerschaft für Kunst im Unternehmen.",img:PH+"photo-1515405295579-ba7b45403062?w=1400&q=80"}
+];
+
+// SPLASH
+var splashEl = document.getElementById('splash');
+if(splashEl){
+  setTimeout(function(){splashEl.classList.add('fade')},2000);
+  setTimeout(function(){splashEl.style.display='none';splashEl.remove()},3500);
+}
+// Fallback: force remove splash after 5s no matter what
+setTimeout(function(){var s=document.getElementById('splash');if(s)s.remove()},5000);
+
+// BUILD KÜNSTLER (VERTICAL LIST)
+var kuOv = document.getElementById('kuenstlerOv');
+kuOv.innerHTML = '<div class="k-hero"><div class="k-hero-bg"><img src="'+PH+'photo-1547891654-e66ed7ebb968?w=1400&q=80"></div><div class="k-hero-ct"><h1>Die<br>Künstler</h1><p>Kuratierte Positionen für Ihren Raum</p></div></div><div class="k-list" id="kList"></div>';
+var kList = document.getElementById('kList');
+artists.forEach(function(a){
+  kList.innerHTML += '<div class="k-item"><div class="k-item-img"><span class="k-item-num">'+a.n+'</span><img src="'+a.img+'"></div><div class="k-item-info"><h3 class="k-item-name">'+a.nm+'</h3><p class="k-item-desc">'+a.d+'</p><div class="k-item-tags">'+a.tags.map(function(t){return'<span class="k-tag">'+t+'</span>'}).join('')+'</div><div class="k-item-link" onclick="openArtist(\''+a.nm.replace(/'/g,"\\'")+'\')">Werke ansehen →</div></div></div>';
+});
+
+// Intersection Observer for fade-in
+var observer = new IntersectionObserver(function(entries){
+  entries.forEach(function(entry){if(entry.isIntersecting)entry.target.classList.add('visible')});
+},{threshold:0.15});
+document.querySelectorAll('.k-item').forEach(function(item){observer.observe(item)});
+
+// BUILD PROZESS (HORIZONTAL SCROLL)
+var pov = document.getElementById('prozessOv');
+var pHTML = '';
+processSteps.forEach(function(s,i){
+  pHTML += '<div class="p-step" id="pStep'+i+'"><div class="p-step-bg"><img src="'+s.img+'"></div><div class="p-step-ct"><div class="p-step-num">'+s.n+'</div><h2 class="p-step-title">'+s.t+'</h2><p class="p-step-desc">'+s.d+'</p></div></div>';
+});
+pHTML += '<div class="p-step-nav" id="pDots"></div>';
+pov.innerHTML = pHTML;
+var dotsEl = document.getElementById('pDots');
+processSteps.forEach(function(s,i){
+  var d = document.createElement('div');
+  d.className = 'p-dot'+(i===0?' active':'');
+  d.onclick = function(){document.getElementById('pStep'+i).scrollIntoView({behavior:'smooth',inline:'start'})};
+  dotsEl.appendChild(d);
+});
+pov.addEventListener('scroll',function(){
+  var idx = Math.round(this.scrollLeft/window.innerWidth);
+  document.querySelectorAll('.p-dot').forEach(function(d,i){d.classList.toggle('active',i===idx)});
+});
+
+// BUILD REFERENZEN
+var refs=[
+{img:PH+"photo-1497366216548-37526070297c?w=1400&q=80",l:"Referenz 01",t:"Kanzlei Müller & Partner",d:"Skulpturale Intervention im Empfangsbereich. Drei Werke schaffen konzentrierte Ruhe.",ri:0},
+{img:PH+"photo-1497366811353-6870744d04b2?w=1400&q=80",l:"Referenz 02",t:"Hotel Lindenberg",d:"Großformatige Malerei in Lobby und Suiten. Farbfelder als Brücke zum Erleben.",ri:1},
+{img:PH+"photo-1486406146926-c627a92ad1ab?w=1400&q=80",l:"Referenz 03",t:"TechVentures GmbH",d:"Lichtinstallation im Hauptquartier – Rhythmus des Unternehmens in Licht übersetzt.",ri:0}
+];
+var refOv = document.getElementById('kreativeOv');
+refs.forEach(function(r){refOv.innerHTML+='<div class="ref-sec"><div class="ref-bg" data-kbg><img src="'+r.img+'"></div><div class="ref-ct"><div class="ref-card'+(r.ri?' ri':'')+'"><div class="ref-label">'+r.l+'</div><h3 class="ref-title">'+r.t+'</h3><p class="ref-text">'+r.d+'</p></div></div></div>'});
+
+// BUILD LEASING
+document.getElementById('leasingOv').innerHTML='<div class="l-inner"><div style="margin-bottom:48px"><h2 class="l-title"><i>K</i>onditionen</h2><p class="l-intro">Transparente Konditionen für Kunst im Raum. Alle Modelle sind als Betriebsausgaben steuerlich absetzbar.</p></div><div class="l-sec"><div class="l-sec-title">Leasing-Modelle</div><div class="l-grid"><div class="l-card"><div class="l-card-n">Einzelwerk</div><div class="l-card-s">Ab 150 € / Monat</div><div class="l-card-d">Ein ausgewähltes Werk für Ihren Raum. Ideal als Einstieg oder Akzent in Empfangsbereichen.</div></div><div class="l-card"><div class="l-card-n">Raumkonzept</div><div class="l-card-s">Ab 400 € / Monat</div><div class="l-card-d">Drei bis fünf Werke, kuratorisch aufeinander abgestimmt. Für Konferenzbereiche und Etagen.</div></div><div class="l-card"><div class="l-card-n">Gebäudekonzept</div><div class="l-card-s">Individuell</div><div class="l-card-d">Umfassende Kunstausstattung für ganze Etagen oder Gebäude. Kuratierte Rundgänge inklusive.</div></div></div></div><div class="l-sec"><div class="l-sec-title">Inklusivleistungen</div><div class="l-grid"><div class="l-card"><div class="l-card-n">Transport</div><div class="l-card-d">Professioneller Kunsttransport. Bundesweit und international.</div></div><div class="l-card"><div class="l-card-n">Versicherung</div><div class="l-card-d">Allgefahrenversicherung (Nail-to-Nail) für die gesamte Laufzeit.</div></div><div class="l-card"><div class="l-card-n">Montage</div><div class="l-card-d">Fachgerechte Installation. Bei Bedarf mit Beleuchtungskonzept.</div></div><div class="l-card"><div class="l-card-n">Wartung</div><div class="l-card-d">Regelmäßige Kontrolle und Pflege. Bei Beschädigung: Ersatz.</div></div><div class="l-card"><div class="l-card-n">Vermittlung</div><div class="l-card-d">Werkbeschreibungen, Führungen für Mitarbeiter und Kunden.</div></div><div class="l-card"><div class="l-card-n">Ankauf-Option</div><div class="l-card-d">Am Laufzeitende Werke zum Restwert übernehmen.</div></div></div></div><div class="l-note"><p><strong>Steuerlicher Hinweis:</strong> Leasingraten sind als Betriebsausgaben voll absetzbar (§ 4 Abs. 4 EStG). Im Gegensatz zum Kauf keine Aktivierung und Abschreibung nötig.</p></div><div style="text-align:center;margin-top:60px;padding-bottom:60px"><button class="cta-btn inv" onclick="openChat()">Individuelles Angebot anfragen</button></div></div>';
+
+// BUILD KONTAKT
+document.getElementById('kontaktOv').innerHTML='<div class="k-inner"><h2 class="k-title"><i>K</i>ontakt</h2><p style="font-size:15px;line-height:1.7;opacity:0.6;max-width:500px">Lassen Sie uns über Kunst in Ihren Räumen sprechen.</p><div class="k-grid"><div><div class="k-label">Adresse</div><div class="k-info">KLS — Corporate Art Services<br>Musterstraße 12<br>10999 Berlin</div></div><div><div class="k-label">Kontakt</div><div class="k-info"><a href="mailto:info@kls-art.de">info@kls-art.de</a><br><a href="tel:+493012345678">+49 30 1234 5678</a></div></div></div><div id="kontaktForm" style="margin-top:60px"><input class="k-input" id="fName" placeholder="Name"><input class="k-input" id="fEmail" type="email" placeholder="E-Mail"><input class="k-input" id="fCompany" placeholder="Unternehmen"><textarea class="k-ta" id="fMsg" placeholder="Ihre Nachricht – erzählen Sie uns von Ihren Räumen"></textarea><button class="cta-btn inv" onclick="sendForm()">Nachricht senden</button></div><div id="formSuccess"><div style="font-size:48px;margin-bottom:20px">✓</div><h3 style="font-family:var(--sf);font-size:28px;font-weight:400;margin-bottom:16px">Vielen Dank</h3><p style="font-size:14px;line-height:1.7;opacity:0.6">Ihre Nachricht wurde gesendet. Wir melden uns in Kürze.</p></div></div>';
+
+// OPEN ARTIST DETAIL
+function openArtist(name){
+  var a=artistWorks[name];if(!a)return;
+  var el=document.getElementById('artistDetail');
+  el.innerHTML='<button class="art-back" onclick="closeArtist()">← Zurück</button>'+
+  '<div class="art-detail-hero"><img src="'+a.img+'"><div class="art-detail-info"><div class="art-detail-num">'+a.num+'</div><h2 class="art-detail-name">'+name+'</h2><p class="art-detail-desc">'+a.desc+'</p><div class="art-detail-tags">'+a.tags.map(function(t){return'<span class="art-detail-tag">'+t+'</span>'}).join('')+'</div></div></div>'+
+  '<div class="works-grid"><h3 class="works-title">Ausgewählte Werke</h3>'+
+  a.works.map(function(w){return'<div class="work-item"><div class="work-img"><img src="'+w.img+'"></div><div class="work-info"><h4 class="work-name">'+w.name+'</h4><p class="work-meta">'+w.meta+'</p><p class="work-text">'+w.text+'</p></div></div>'}).join('')+
+  '<div style="text-align:center;padding:40px 0 80px"><button class="cta-btn inv" onclick="closeArtist();go(\'kontakt\',{portfolio:true})">Werke anfragen</button></div></div>';
+  el.classList.add('av');el.scrollTop=0;
+}
+function closeArtist(){document.getElementById('artistDetail').classList.remove('av')}
+
+// NAV
+document.querySelectorAll('.nb').forEach(function(b){b.addEventListener('click',function(){go(this.dataset.v)})});
+
+function go(v,opts){
+  document.querySelectorAll('.ov').forEach(function(o){o.classList.remove('av')});
+  hdr.classList.remove('dk');foot.classList.remove('dk');
+  if(v==='about'){main.style.display='block';cur='about'}
+  else{
+    main.style.display='none';cur=v;
+    var el=document.getElementById(v+'Ov');
+    if(el){el.classList.add('av');el.scrollTop=0;if(v==='prozess')el.scrollLeft=0}
+    if(v==='prozess'){hdr.classList.add('dk');foot.classList.add('dk')}
+  }
+  if(v==='kontakt'&&opts&&opts.portfolio){setTimeout(function(){var m=document.getElementById('fMsg');if(m)m.value='Ich interessiere mich für Ihr Künstler-Portfolio und möchte gerne mehr über die verfügbaren Werke erfahren.'},100)}
+  updateNav();
+}
+
+function updateNav(){document.querySelectorAll('.nb').forEach(function(b){var v=b.dataset.v;b.className=(v===cur||(cur==='about'&&v==='about'))?'nb ac':'nb mu'})}
+
+// MAIN SCROLL
+main.addEventListener('scroll',function(){
+  var st=this.scrollTop,vh=window.innerHeight,pr=st/(320*vh/100);
+  var idx=Math.min(2,Math.floor(pr*3));
+  ['i0','i1','i2'].forEach(function(id,i){document.getElementById(id).classList.toggle('av',i===idx)});
+  var sz=document.getElementById('stZone'),r=sz.getBoundingClientRect();
+  if(r.top<vh&&r.bottom>0){var sp=(vh-r.top)/(vh+r.height);for(var i=0;i<3;i++){var l=document.getElementById('s'+i),ls=0.2+i*0.15,le=ls+0.2;if(sp>ls&&sp<le)l.style.opacity=Math.min(1,(sp-ls)/0.1);else if(sp>=le)l.style.opacity=Math.max(0,1-(sp-le)/0.1);else l.style.opacity=0}}
+  document.querySelectorAll('[data-parbg]').forEach(function(bg){var s=bg.parentElement,rc=s.getBoundingClientRect(),p=(vh-rc.top)/(vh+rc.height);bg.style.transform='translateY('+((p-0.5)*80)+'px)'});
+});
+
+// REFERENZEN parallax
+document.getElementById('kreativeOv').addEventListener('scroll',function(){var vh=window.innerHeight;this.querySelectorAll('[data-kbg]').forEach(function(bg){var s=bg.parentElement,r=s.getBoundingClientRect(),p=(vh-r.top)/(vh+r.height);bg.style.transform='translateY('+((p-0.5)*80)+'px)'})});
+
+// KONTAKT form
+function sendForm(){
+  var n=document.getElementById('fName').value,e=document.getElementById('fEmail').value,c=document.getElementById('fCompany').value,m=document.getElementById('fMsg').value;
+  var subj=encodeURIComponent('Anfrage KLS'+(c?' – '+c:''));
+  var body=encodeURIComponent((n?'Name: '+n+'\n':'')+(e?'E-Mail: '+e+'\n':'')+(c?'Unternehmen: '+c+'\n\n':'\n')+m);
+  window.open('mailto:info@kls-art.de?subject='+subj+'&body='+body,'_blank');
+  document.getElementById('kontaktForm').style.display='none';document.getElementById('formSuccess').style.display='block';
+}
+
+// CHAT (with Anthropic API)
+var chatMsgs=[{role:'assistant',content:'Willkommen bei KLS — Corporate Art Services. Ich bin Ihr persönlicher Berater für Kunst im Unternehmensraum. Wie kann ich Ihnen helfen?'}];
+var chatLoading=false;
+
+function openChat(){document.getElementById('chatBox').classList.add('av');document.getElementById('chatBtn').style.display='none';renderChat()}
+function closeChat(){document.getElementById('chatBox').classList.remove('av');document.getElementById('chatBtn').style.display='flex'}
+
+function renderChat(){
+  var c=document.getElementById('chatMsgs');c.innerHTML='';
+  chatMsgs.forEach(function(m){c.innerHTML+='<div class="chat-msg '+(m.role==='user'?'u':'a')+'"><div class="chat-bubble">'+m.content+'</div></div>'});
+  if(chatLoading)c.innerHTML+='<div class="chat-msg a"><div class="chat-bubble" style="opacity:0.5">Einen Moment...</div></div>';
+  c.scrollTop=c.scrollHeight;
+}
+
+document.getElementById('chatIn').addEventListener('keydown',function(e){if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();sendChat()}});
+document.getElementById('chatIn').addEventListener('input',function(){document.getElementById('chatSend').className=this.value.trim()?'active':''});
+
+async function sendChat(){
+  var inp=document.getElementById('chatIn'),msg=inp.value.trim();if(!msg||chatLoading)return;
+  inp.value='';chatMsgs.push({role:'user',content:msg});chatLoading=true;renderChat();
+  try{
+    var sys='Du bist der KI-Berater von KLS — Corporate Art Services. WISSEN: Leasing-Modelle: Einzelwerk (ab 150€/Mo), Raumkonzept (ab 400€/Mo, 3-5 Werke), Gebäudekonzept (individuell). Laufzeiten 6-36 Monate. 100% als Betriebsausgaben absetzbar (§4 Abs.4 EStG). Inklusiv: Transport, Versicherung Nail-to-Nail, Montage, Wartung, Vermittlung, Ankauf-Option. KÜNSTLER: Volker Seifried (Skulptur), Johannes Weiß (Skulptur, Aluminium/Bronze, UdK Berlin bei Prof. Cragg), Maria Stern (Malerei), Lukas Grimm (Lichtinstallation), Keike Kimoto (Textil), Jennifer Bisch (Zeichnung), Keiko Kimoto (Keramik), Thomas Klee (Fotografie), Sophie Rau (Video), David Gross (Stahl). PROZESS: 1) Raumanalyse 2) Kuration 3) Vertrag 4) Installation 5) Betreuung. STIL: Professionell, kompetent, warm. Deutsch. Max 3-4 Sätze. Bei Interesse empfiehl info@kls-art.de oder +49 30 1234 5678.';
+    var res=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:1000,system:sys,messages:chatMsgs.map(function(m){return{role:m.role,content:m.content}})})});
+    var data=await res.json();
+    var reply=data.content?data.content.map(function(c){return c.text||''}).join(''):'Bitte kontaktieren Sie uns unter info@kls-art.de.';
+    chatMsgs.push({role:'assistant',content:reply});
+  }catch(e){
+    chatMsgs.push({role:'assistant',content:'Technisches Problem. Bitte kontaktieren Sie uns unter info@kls-art.de oder +49 30 1234 5678.'});
+  }
+  chatLoading=false;renderChat();
+}
+
+updateNav();
+</script>
+</body>
+</html>
